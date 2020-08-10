@@ -40,7 +40,6 @@ class TasksController < ApplicationController
     end
     
     def destroy
-        @task = Task.find(params[:id])
         @task.destroy
     
         flash[:success] = 'Taskは正常に削除されました'
